@@ -1,0 +1,39 @@
+plugin.tx_kvtt {
+	view {
+		templateRootPath = {$plugin.tx_kvtt.view.templateRootPath}
+		partialRootPath = {$plugin.tx_kvtt.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_kvtt.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_kvtt.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_kvtt._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-kv-tt table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-kv-tt table th {
+		font-weight:bold;
+	}
+
+	.tx-kv-tt table td {
+		vertical-align:top;
+	}
+)
