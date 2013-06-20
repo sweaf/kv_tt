@@ -47,9 +47,6 @@ class TestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 	 * @return void
 	 */
 	public function listAction() {
-	
-		$hello = 'Test';
-	
 		$tests = $this->testRepository->findAll();
 		$this->view->assign('tests', $tests);
 	}
